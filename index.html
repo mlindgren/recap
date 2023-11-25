@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Annual Recap</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <script src="https://kit.fontawesome.com/39a533984e.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+        background-image: url("https://forums.macrumors.com/attachments/mac_os_x_lion_linen_wallpaper_by_tn2209-d41fmb2-png.300802/");
+        background-color: #222;
+        font-family: Arial;
+        }
+
+        h2 {
+        margin: 5px 0 10px 0;
+        }
+
+        /* Define styles for each box */
+        .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        .box {
+        width: 50%;
+        max-width: 1000px;
+        min-height: 200px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        text-shadow: 2px 2px 2px #000000;
+        padding: 10px;
+        color: white;
+        -webkit-box-shadow: 3px 3px 4px 0px #000000; 
+        box-shadow: 3px 3px 4px 0px #000000;
+        }
+
+        .horizontal-list {
+        display: flex;
+        justify-content: space-between; /* Evenly distribute items */
+        /* font-weight: bold; */
+        }
+
+        /* Example specific styles for each service */
+        .box.strava {
+        background-color: #fc4c02; /* Strava's brand color */
+        }
+
+        .box.spotify {
+        background-color: #1db954; /* Spotify's brand color */
+        }
+
+        .box.steam {
+        background-color: #171a21; /* Steam's brand color */
+        }
+
+        .box.goodreads {
+        background-color: #553b08; /* Goodreads' brand color */
+        }
+
+        /* Add styles for statistics */
+        .stats p {
+        margin-bottom: 8px;
+        }
+
+        .stats .value {
+        font-weight: bold;
+        }
+
+        /* Add styles for song list */
+        .song-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+
+        .song-list li {
+        margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box strava">
+      <h2><span class="fa-brands fa-strava"></span> Strava</h2>
+      <div class="horizontal-list">
+        <div>Miles: 845.4</div>
+        <div>Hours: 168</div>
+        <div>Other stat: ???</div>
+      </div>
+      <div class="chart">
+        <canvas id="strava-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="box spotify">
+    <h2><span class="fa-brands fa-spotify"></span> Spotify</h2>
+      <div class="stats">
+        <div class="horizontal-list">
+          <div>Hours: 845.4</div>
+          <div>Songs: 3910</div>
+          <div>Artists: 412</div>
+        </div>
+        <!-- Other Spotify statistics placeholders -->
+      </div>
+    </div>
+
+    <div class="box steam">
+    <h2><span class="fa-brands fa-steam"></span> Steam</h2>
+      <div class="stats">
+        <p>Top Games:</p>
+        <ul class="song-list">
+          <li>--</li>
+          <li>--</li>
+          <!-- More list items for songs -->
+        </ul>
+        <!-- Other Spotify statistics placeholders -->
+      </div>
+    </div>
+    
+    <div class="box goodreads">
+    <h2><span class="fa-brands fa-goodreads"></span> Goodreads</h2>
+      <div class="stats">
+        <p>Top Games:</p>
+        <ul class="song-list">
+          <li>--</li>
+          <li>--</li>
+          <!-- More list items for songs -->
+        </ul>
+        <!-- Other Spotify statistics placeholders -->
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    const ctx = document.getElementById("strava-chart");
+
+    Chart.defaults.color = "#fff";
+
+    new Chart(ctx, {
+        type: "bar",
+        data: {
+            labels: ["Running", "Skiing", "Snowboarding", "Cycling"],
+            datasets: [{
+                label: "hours",
+                data: [100, 30, 40, 20],
+                color: "#fff",
+                backgroundColor: "rgb(255, 255, 255, 0.5)"
+            }]
+        }
+    });
+  </script>
+</body>
+</html>
