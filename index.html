@@ -6,80 +6,7 @@
   <!-- <link rel="stylesheet" href="styles.css"> -->
   <script src="https://kit.fontawesome.com/39a533984e.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-        background-image: url("https://forums.macrumors.com/attachments/mac_os_x_lion_linen_wallpaper_by_tn2209-d41fmb2-png.300802/");
-        background-color: #222;
-        font-family: Arial;
-        }
-
-        h2 {
-        margin: 5px 0 10px 0;
-        }
-
-        /* Define styles for each box */
-        .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-
-        .box {
-        width: 50%;
-        max-width: 1000px;
-        min-height: 200px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        text-shadow: 2px 2px 2px #000000;
-        padding: 10px;
-        color: white;
-        -webkit-box-shadow: 3px 3px 4px 0px #000000; 
-        box-shadow: 3px 3px 4px 0px #000000;
-        }
-
-        .horizontal-list {
-        display: flex;
-        justify-content: space-between; /* Evenly distribute items */
-        /* font-weight: bold; */
-        }
-
-        /* Example specific styles for each service */
-        .box.strava {
-        background-color: #fc4c02; /* Strava's brand color */
-        }
-
-        .box.spotify {
-        background-color: #1db954; /* Spotify's brand color */
-        }
-
-        .box.steam {
-        background-color: #171a21; /* Steam's brand color */
-        }
-
-        .box.goodreads {
-        background-color: #553b08; /* Goodreads' brand color */
-        }
-
-        /* Add styles for statistics */
-        .stats p {
-        margin-bottom: 8px;
-        }
-
-        .stats .value {
-        font-weight: bold;
-        }
-
-        /* Add styles for song list */
-        .song-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        }
-
-        .song-list li {
-        margin-bottom: 4px;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
@@ -96,14 +23,19 @@
     </div>
 
     <div class="box spotify">
-    <h2><span class="fa-brands fa-spotify"></span> Spotify</h2>
+    <h2>Music</h2>
       <div class="stats">
         <div class="horizontal-list">
-          <div>Hours: 845.4</div>
-          <div>Songs: 3910</div>
-          <div>Artists: 412</div>
+          <div>Hours: 378.9</div>
+          <div>Songs: 2,224</div>
+          <div>Artists: 804</div>
         </div>
         <!-- Other Spotify statistics placeholders -->
+      </div>
+      <div class="footer spotify">
+        <p>
+        Data from <span class="fa-brands fa-spotify"></span> Spotify
+        </p>
       </div>
     </div>
 
