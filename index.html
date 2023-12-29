@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Annual Recap</title>
-  <!-- <link rel="stylesheet" href="styles.css"> -->
   <script src="https://kit.fontawesome.com/39a533984e.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -11,14 +10,22 @@
 <body>
   <div class="container">
     <div class="box strava">
-      <h2><span class="fa-brands fa-strava"></span> Strava</h2>
+      <h2>Fitness</h2>
       <div class="horizontal-list">
-        <div>Miles: 845.4</div>
-        <div>Hours: 168</div>
-        <div>Other stat: ???</div>
+        <div>Miles: 964</div>
+        <div>Time: 185h 47m</div>
+        <div>Days Active: 223</div>
       </div>
-      <div class="chart">
-        <canvas id="strava-chart"></canvas>
+      <div class="chart-container">
+        <canvas id="chart-fitness-activities"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="chart-fitness-monthly"></canvas>
+      </div>
+      <div class="footer strava">
+        <p>
+        Data from <span class="fa-brands fa-strava"></span> Strava
+        </p>
       </div>
     </div>
 
@@ -67,23 +74,6 @@
     
   </div>
 
-  <script>
-    const ctx = document.getElementById("strava-chart");
-
-    Chart.defaults.color = "#fff";
-
-    new Chart(ctx, {
-        type: "bar",
-        data: {
-            labels: ["Running", "Skiing", "Snowboarding", "Cycling"],
-            datasets: [{
-                label: "hours",
-                data: [100, 30, 40, 20],
-                color: "#fff",
-                backgroundColor: "rgb(255, 255, 255, 0.5)"
-            }]
-        }
-    });
-  </script>
+  <script src="chart-data.js"></script>
 </body>
 </html>

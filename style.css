@@ -30,6 +30,11 @@ body {
     position: relative;
     overflow: hidden;
   }
+
+  .chart-container
+  {
+    margin-bottom: 2em;
+  }
   
   .horizontal-list {
     display: flex;
