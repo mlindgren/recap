@@ -8,13 +8,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="container">
-    <div class="box strava">
+
+    <div class="box fitness">
       <h2>Fitness</h2>
-      <div class="horizontal-list">
-        <div>Miles: 964</div>
-        <div>Time: 185h 47m</div>
-        <div>Days Active: 223</div>
+      <div class="headline-stats">
+        <div class="headline-stat-box">
+          <p>active days</p>
+          <p class="headline-stat-data">223</p>
+        </div>
+        <div class="headline-stat-box">
+          <p>distance</p>
+          <p class="headline-stat-data">964 miles</p>
+        </div>
+        <div class="headline-stat-box">
+          <p>time</p>
+          <p class="headline-stat-data">185h 47m</p>
+        </div>
       </div>
       <div class="chart-container">
         <canvas id="chart-fitness-activities"></canvas>
@@ -22,53 +33,86 @@
       <div class="chart-container">
         <canvas id="chart-fitness-monthly"></canvas>
       </div>
-      <div class="footer strava">
+      <div class="footer">
         <p>
-        Data from <span class="fa-brands fa-strava"></span> Strava
+        tracked with 
+        <span class="brand garmin">&#x25B2; Garmin</span> &
+        <span class="brand strava"><span class="fa-brands fa-strava"></span> Strava</span>
         </p>
       </div>
     </div>
 
-    <div class="box spotify">
-    <h2>Music</h2>
-      <div class="stats">
-        <div class="horizontal-list">
-          <div>Hours: 378.9</div>
-          <div>Songs: 2,224</div>
-          <div>Artists: 804</div>
+    <div class="box music">
+      <h2>Music</h2>
+      <div class="headline-stats">
+        <div class="headline-stat-box">
+          <p>unique songs</p>
+          <p class="headline-stat-data">2,224</p>
         </div>
-        <!-- Other Spotify statistics placeholders -->
+        <div class="headline-stat-box">
+          <p>unique artists</p>
+          <p class="headline-stat-data">804</p>
+        </div>
+        <div class="headline-stat-box">
+          <p>time</p>
+          <p class="headline-stat-data">378h 54m</p>
+        </div>
       </div>
-      <div class="footer spotify">
+      <div class="footer">
         <p>
-        Data from <span class="fa-brands fa-spotify"></span> Spotify
+        tracked with
+        <span class="brand spotify"><span class="fa-brands fa-spotify"></span> Spotify</span> &
+        <span class="brand lastfm"><span class="fa-brands fa-lastfm"></span> Last.fm</span>
         </p>
       </div>
     </div>
 
-    <div class="box steam">
-    <h2><span class="fa-brands fa-steam"></span> Steam</h2>
-      <div class="stats">
-        <p>Top Games:</p>
-        <ul class="song-list">
-          <li>--</li>
-          <li>--</li>
-          <!-- More list items for songs -->
-        </ul>
-        <!-- Other Spotify statistics placeholders -->
+    <div class="box gaming">
+      <h2>Gaming</h2>
+      <div class="headline-stats">
+        <div class="headline-stat-box">
+          <p>unique games played</p>
+          <p class="headline-stat-data">57</p>
+        </div>
+        <div class="headline-stat-box">
+          <p>new games completed</p>
+          <p class="headline-stat-data">28</p>
+        </div>
+        <div class="headline-stat-box">
+          <p>achievements</p>
+          <p class="headline-stat-data">451</p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+        tracked with
+        <span class="brand steam"><span class="fa-brands fa-steam"></span> Steam</span> &
+        <span class="brand hltb"><span class="fa-solid fa-square-h"></span> HowLongToBeat</span>
+        </p>
       </div>
     </div>
     
-    <div class="box goodreads">
-    <h2><span class="fa-brands fa-goodreads"></span> Goodreads</h2>
-      <div class="stats">
-        <p>Top Games:</p>
-        <ul class="song-list">
-          <li>--</li>
-          <li>--</li>
-          <!-- More list items for songs -->
-        </ul>
-        <!-- Other Spotify statistics placeholders -->
+    <div class="box reading">
+      <h2>Reading</h2>
+      <div class="headline-stats">
+        <div class="headline-stat-box">
+          <p>books read</p>
+          <p class="headline-stat-data">12</p>
+        </div>
+        <div class="headline-stat-box">
+          <p>pages</p>
+          <p class="headline-stat-data">2,911</p>
+        </div>
+        <div class="headline-stat-box">
+          <p>fucks given</p>
+          <p class="headline-stat-data">0</p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+        tracked with
+        <span class="brand goodreads"><span class="fa-brands fa-goodreads"></span> Goodreads</span>
+        </p>
       </div>
     </div>
     

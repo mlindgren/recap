@@ -1,101 +1,156 @@
 body {
-    background-image: url("https://forums.macrumors.com/attachments/mac_os_x_lion_linen_wallpaper_by_tn2209-d41fmb2-png.300802/");
-    background-color: #222;
-    font-family: Arial;
-  }
+  background-image: url("https://forums.macrumors.com/attachments/mac_os_x_lion_linen_wallpaper_by_tn2209-d41fmb2-png.300802/");
+  background-color: #222;
+  font-family: Arial;
+}
   
-  h2 {
-    margin: 5px 0 10px 0;
-  }
+h2 {
+  margin: 5px 0 10px 0;
+}
   
-  /* Define styles for each box */
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* Define styles for each box */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
-  .box {
-    width: 50%;
-    max-width: 1000px;
-    min-height: 200px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    text-shadow: 2px 2px 2px #000000;
-    padding: 10px;
-    color: white;
-    background-color: #aaa;
-    -webkit-box-shadow: 3px 3px 4px 0px #000000; 
-    box-shadow: 3px 3px 4px 0px #000000;
-    position: relative;
-    overflow: hidden;
-  }
+.box {
+  width: 50%;
+  max-width: 1000px;
+  min-height: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px #000000;
+  padding: 10px;
+  color: white;
+  background-color: #aaa;
+  -webkit-box-shadow: 3px 3px 4px 0px #000000; 
+  box-shadow: 3px 3px 4px 0px #000000;
+  position: relative;
+  overflow: hidden;
+}
 
-  .chart-container
-  {
-    margin-bottom: 2em;
-  }
-  
-  .horizontal-list {
-    display: flex;
-    justify-content: space-between; /* Evenly distribute items */
-    /* font-weight: bold; */
-  }
-  
-  .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2em; /* Height of the footer */
-    background-color: #1db954; /* Spotify's brand color */
-    text-align: right;
-  }
-  
-  .footer p
-  {
-    margin: 5px;
-  }
-  
-  .box.spotify
-  {
+.chart-container {
+  margin-bottom: 2em;
+}
+
+.headline-stats {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  /* grid-auto-flow: column; */
+  /* grid-auto-columns: 1fr; */
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-between; /* Evenly distribute items */
+  width: 100%;
+}
+
+.headline-stat-box {
+  display: box;
+  min-height: 4em;
+  background-color: rgba(0,0,0,0.5);
+  border: 2px solid rgba(170, 170, 170, 0.5);
+  padding: 2px;
+}
+
+.headline-stat-box p {
+  margin: 5px;
+  padding: 0;
+}
+
+p.headline-stat-data {
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2em;
+  background-color: rgba(0,0,0,0.5);
+  text-align: right;
+}
+
+.footer p {
+  margin: 5px;
+}
+
+.box.fitness {
+  background: rgb(255,42,0);
+  background: linear-gradient(133deg, rgba(255,42,0,1) 0%, rgba(255,141,0,1) 35%, rgba(166,0,236,1) 100%);
+}
+
+.box.music {
   background: rgb(18,204,0);
   background: linear-gradient(133deg, rgba(18,204,0,1) 0%, rgba(3,164,170,1) 35%, rgba(0,111,133,1) 100%);
-  }
-  
-  /* Example specific styles for each service */
-  .footer.strava {
-    background-color: #fc4c02; /* Strava's brand color */
-  }
-  
-  .footer.spotify {
-    background-color: #1db954; /* Spotify's brand color */
-  }
-  
-  .footer.steam {
-    background-color: #171a21; /* Steam's brand color */
-  }
-  
-  .footer.goodreads {
-    background-color: #553b08; /* Goodreads' brand color */
-  }
-  
-  /* Add styles for statistics */
-  .stats p {
-    margin-bottom: 8px;
-  }
-  
-  .stats .value {
-    font-weight: bold;
-  }
-  
-  /* Add styles for song list */
-  .song-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .song-list li {
-    margin-bottom: 4px;
-  }
+}
+
+.box.gaming {
+  background: rgb(103,12,224);
+  background: linear-gradient(133deg, rgba(216,161,65,1) 0%, rgba(103,12,224,1) 35%, rgba(40,129,83,1) 100%);
+}
+
+.box.reading {
+  background: rgb(56,164,228);
+  background: linear-gradient(133deg, rgba(56,164,228,1) 0%, rgba(211,67,53,1) 35%, rgba(238,147,0,1) 100%);
+}
+
+span.brand {
+  font-weight: bold;
+}
+
+span.garmin
+{
+  color: #6DCFF6;
+}
+
+span.strava {
+  color: #fc4c02; 
+}
+
+span.spotify {
+  color: #1db954;
+}
+
+span.lastfm {
+  color: #d51007;
+}
+
+/* span.steam {
+  color: #171a21;
+}
+
+span.hltb
+{
+  color: #000;
+} */
+
+span.goodreads {
+  color: #553b08;
+}
+
+
+/* Add styles for statistics */
+.stats p {
+  margin-bottom: 8px;
+}
+
+.stats .value {
+  font-weight: bold;
+}
+
+/* Add styles for song list */
+.song-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.song-list li {
+  margin-bottom: 4px;
+}
