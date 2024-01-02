@@ -7,7 +7,7 @@ const data_fitness_activities = {
     labels: ["Walking", "Running", "Skiing", "Snowboarding", "Bouldering", "Hiking", "Cycling", "Swimming", "Other"],
     datasets: [{
         label: "hours",
-        data: [53.3, 36.5, 26.3, 23.9, 20.4, 13.2, 7.8, 1.8, 2.8],
+        data: [53.3, 36.5, 28.2, 23.9, 20.4, 13.2, 7.8, 1.8, 2.8],
         color: "#fff",
         backgroundColor: "rgb(255, 255, 255, 0.5)"
     }]
@@ -18,14 +18,14 @@ const data_fitness_monthly = {
     datasets: [{
         label: "hours",
         yAxisID: "hours",
-        data: [20, 16, 19.66, 15.66, 12, 6, 15.66, 15.5, 15, 22, 13, 15],
+        data: [20, 16, 19.66, 15.66, 12, 6, 15.66, 15.5, 15, 22, 13, 17],
         // color: "#fff",
         // backgroundColor: "rgb(255, 255, 255, 0.5)"
     },
     {
       label: "miles",
       yAxisID: "miles",
-      data: [150, 124, 137, 72, 59, 12, 76, 38, 59, 72, 51, 107]  
+      data: [150, 124, 137, 72, 59, 12, 76, 38, 59, 72, 51, 119]  
     }]
 };
 

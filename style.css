@@ -1,10 +1,12 @@
 body {
   background-image: url("https://forums.macrumors.com/attachments/mac_os_x_lion_linen_wallpaper_by_tn2209-d41fmb2-png.300802/");
   background-color: #222;
-  font-family: Arial;
+  font-family: 'Open Sans', 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Verdana, Arial, Sans-Serif;
+  text-shadow: 2px 2px 2px #000000;
+  color: white;
 }
   
-h2 {
+h1, h2, h3, h4, h5 {
   margin: 5px 0 10px 0;
 }
   
@@ -21,9 +23,7 @@ h2 {
   min-height: 200px;
   margin-bottom: 20px;
   border-radius: 10px;
-  text-shadow: 2px 2px 2px #000000;
-  padding: 10px;
-  color: white;
+  padding: 10px 10px 3em 10px;
   background-color: #aaa;
   -webkit-box-shadow: 3px 3px 4px 0px #000000; 
   box-shadow: 3px 3px 4px 0px #000000;
@@ -31,16 +31,8 @@ h2 {
   overflow: hidden;
 }
 
-.chart-container {
-  margin-bottom: 2em;
-}
-
 .headline-stats {
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
-  /* grid-auto-flow: column; */
-  /* grid-auto-columns: 1fr; */
   grid-gap: 0.5em;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: space-between; /* Evenly distribute items */
@@ -64,6 +56,25 @@ p.headline-stat-data {
   font-size: 3em;
   font-weight: bold;
   color: white;
+}
+
+.top-items-container {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-between; /* Evenly distribute items */
+  width: 100%;
+}
+
+.top-item img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.top-item p {
+  margin: 2px;
+  padding: 0;
 }
 
 .footer {
